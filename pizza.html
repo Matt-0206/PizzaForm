@@ -1,0 +1,109 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8" >
+   <title>Blackstone Bistro: Pizza-on-Demand</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+
+<h1>Blackstone Bistro | Pizza-on-Demand</h1>
+
+<p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+
+<form action="http://www.blackgoosebistro.com/pizza.php"method="POST">
+
+<form>
+
+  <fieldset>
+
+    Your Information
+
+    <ul>
+
+      <li> <label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"> </li>
+
+      <li><label for="form-adresse">Adresse:</label> <input type="text" name="adresse" id="form-adresse">  </li>
+
+      <li><label for="form-tel">Tel:</label> <input type="tel" name="telefono" id="form-tel"> </li>
+
+      <li><label for="form-email">Email:</label> <input type="email" name="email" id="form-email"> </li>
+
+      <li><label for="form-delivery">Delivery instructions:</label> <textarea type="text" name="deliveryadresse" id="form-delivery" maxlength="400"> </textarea></li>
+
+    </ul>
+
+</fieldset>
+
+<h2>Design Your Dream Pizza:</h2>
+
+<p>Pizza specs<p>
+
+<p>Crust <em>(Choose one)</em>:</p>
+
+  <ul>
+
+    <li><input type="radio">Classic white</li>
+
+    <li><input type="radio">Multigrain</li>
+
+    <li><input type="radio">Cheese-stuffed crust</li>
+
+    <li><input type="radio">Gluten-free</li>
+
+  </ul>
+
+<p>Toppings <em>(Choose as many as you want)</em>:</p>
+
+  <ul>
+
+    <li><input type="checkbox">Red sauce</li>
+
+    <li><input type="checkbox">White sauce</li>
+
+    <li><input type="checkbox">Mozzarella Cheese</li>
+
+    <li><input type="checkbox">Pepperoni</li>
+
+    <li><input type="checkbox">Mushrooms</li>
+
+    <li><input type="checkbox">Peppers</li>
+
+    <li><input type="checkbox">Anchovies</li>
+
+  </ul>
+
+<legend>Number</legend>
+
+<select name="pizzas">
+
+<option>1</option>
+
+<option>2</option>
+
+<option>3</option>
+
+<option>4</option>
+
+<option>5</option>
+
+<option>6</option>
+
+<p>How many pizzas:<p>
+
+<fieldset>
+
+<p><input type="submit" value="bring me a Pizza!" class="input1"></p>
+
+<p><input type="submit" value="Reset" class="input2"></p>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
