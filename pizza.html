@@ -15,7 +15,7 @@
 
 <p class="subtitle">Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
 
-<form>
+<form onsubmit="return dataResult()">
 
   <fieldset>
 
@@ -45,13 +45,13 @@
 
   <ul>
 
-    <li><input type="radio">Classic white</li>
+    <li><input type="radio" name="crust" value="Classic white">Classic white</li>
 
-    <li><input type="radio">Multigrain</li>
+    <li><input type="radio" name="crust" value="Multigrain">Multigrain</li>
 
-    <li><input type="radio">Cheese-stuffed crust</li>
+    <li><input type="radio" name="crust" value="Cheese-stuffed crust">Cheese-stuffed crust</li>
 
-    <li><input type="radio">Gluten-free</li>
+    <li><input type="radio" name="crust" value="Gluten-free">Gluten-free</li>
 
   </ul>
 
@@ -59,19 +59,19 @@
 
   <ul>
 
-    <li><input type="checkbox">Red sauce</li>
+    <li><input type="checkbox" name="toppings" value="Red sauce">Red sauce</li>
 
-    <li><input type="checkbox">White sauce</li>
+    <li><input type="checkbox" name="toppings" value="White sauce">White sauce</li>
 
-    <li><input type="checkbox">Mozzarella Cheese</li>
+    <li><input type="checkbox" name="toppings" value="Mozzarella Cheese">Mozzarella Cheese</li>
 
-    <li><input type="checkbox">Pepperoni</li>
+    <li><input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</li>
 
-    <li><input type="checkbox">Mushrooms</li>
+    <li><input type="checkbox" name="toppings" value="Mushrooms">Mushrooms</li>
 
-    <li><input type="checkbox">Peppers</li>
+    <li><input type="checkbox" name="toppings" value="Peppers">Peppers</li>
 
-    <li><input type="checkbox">Anchovies</li>
+    <li><input type="checkbox" name="toppings" value="Anchovies">Anchovies</li>
 
   </ul>
 
@@ -98,6 +98,8 @@
 <p><input type="submit" value="bring me a Pizza!" class="input1"></p>
 
 <p><input type="submit" value="Reset" class="input2"></p>
+
+<p id="dati"></p>
 
 </fieldset>
 
